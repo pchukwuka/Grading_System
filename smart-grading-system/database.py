@@ -131,7 +131,7 @@ class DatabaseManager:
     def _create_default_teachers(self, cursor):
         """Create default teacher accounts"""
         default_teachers = [
-            ('Mr. Johnson', 'Johnson', 'password123'),
+            ('Mr. Kevin', 'Kevin', 'password123'),
             ('Mrs. Peace', 'Peace', 'password123')
         ]
 
