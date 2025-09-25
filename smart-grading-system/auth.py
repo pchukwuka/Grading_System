@@ -26,7 +26,7 @@ class AuthenticationManager:
         return None
 
     def _authenticate_teacher(self):
-        """Authenticate teacher using username and password"""
+        """Authenticate teacher using username and their password"""
         print("\n--- Teacher Login ---")
 
         max_attempts = 3
