@@ -1,0 +1,98 @@
+# Smart Grading and Feedback System - Requirements
+# ================================================
+# Advanced OOP version using SQLite database
+
+# Python Version Requirement
+# ==========================
+#python>=3.6
+
+# Core Dependencies
+# =================
+# This system uses ONLY Python standard library modules:
+
+# Database Operations
+# sqlite3             # Built-in SQLite database interface
+
+# System Operations  
+# os            # Operating system interface (file operations, screen clearing)
+
+# Security & Authentication
+# random              # Generate secure login codes
+# string              # String constants for code generation
+# datetime            # Timestamps for records
+
+# Additional Standard Library Modules Used
+# ========================================
+# sys                 # System parameters (used in main.py for exit)
+# getpass             # Secure password input (hides typing)
+# json                # JSON parsing for question options
+# abc                 # Abstract base classes for OOP design
+
+# No External Package Installation Required!
+# ==========================================
+# All functionality uses Python's built-in modules
+# No pip install commands needed
+# No internet connection required for dependencies
+
+# Optional Development Tools (Not Required)
+# ========================================
+# For instructors or advanced students only:
+
+
+
+# Installation Instructions
+# =========================
+# 
+# Basic Installation (Students):
+# 1. Ensure Python 3.6+ is installed
+# 2. Download all .py files to a folder
+# 3. Open terminal in that folder
+# 4. Run: python main.py
+# 
+# No additional installation steps required!
+#
+# Development Installation (Instructors):
+
+# System Requirements
+# ===================
+# - Python 3.6 or higher
+# - SQLite support (included with Python)
+# - Windows/macOS/Linux compatible
+# - Minimum 10MB free disk space
+# - No network connectivity required
+
+# Database Information
+# ====================
+# - Uses SQLite database (smart_grading.db)
+# - Database file created automatically
+# - No database server setup required
+# - Human-readable with SQLite browser tools
+# - Supports concurrent access for classroom use
+
+# Security Features
+# =================
+# - Password hashing using hashlib (standard library)
+# - Secure password input with getpass module
+# - Auto-generated student login codes
+# - SQL injection protection through parameterized queries
+# - Input validation throughout application
+
+# File Structure
+# ==============
+# project/
+# ├── main.py              # Application entry point
+# ├── database.py          # DatabaseManager class
+# ├── auth.py              # AuthenticationManager class
+# ├── user.py              # Base User class and utilities
+# ├── teacher.py           # Teacher class
+# ├── student.py           # Student class
+# ├── requirements.txt     # This file
+# └── smart_grading.db     # SQLite database (auto-created)
+
+# Troubleshooting
+# ===============
+# Common issues:
+# - "sqlite3 module not found": Python installation issue
+# - Database locked: Close other instances
+# - Permission errors: Check folder write permissions
+# - Import errors: Ensure all .py files in same directory
